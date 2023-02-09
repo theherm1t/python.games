@@ -1,0 +1,18 @@
+import turtle
+
+def draw_square(one_turtle, side_length):
+    #one_turtle tells the function which turtle to move around
+    #side_length tells the function what size of square i want
+
+    for counter in range(4):
+        one_turtle.forward(side_length)
+        one_turtle.left(90)
+    #range(4) runs the arguments 4 times to complete a full square
+    #one_turtle.forwards(side_length) allows me to enter whatever side length wanted when calling the function
+    #one_turtle.left(90) ensures that my turtle turns 90º everytime it completes its set amount of units
+
+emily = turtle.Turtle()
+#defining a turtle i'd like to use
+
+draw_square(emily, 50)
+#calling the function
